@@ -7,7 +7,7 @@ nav {
     justify-content: center;
     box-sizing: border-box;
     position: fixed;
-    margin-top: -3em;
+    margin-top: -3rem;
     background-color: #364f6b;
     z-index: 1;
 }
@@ -29,8 +29,16 @@ p {
     box-sizing: border-box;
 }
 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #364f6b;
+}
+
 .post {
-    padding: 4em 0;
+    padding: 19rem 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,6 +54,7 @@ p {
 
 .grid1 {
     margin-top: 2em;
+    margin-bottom: 2em;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 2em;
@@ -75,25 +84,48 @@ p {
     background-color: #fc5185;
 }
 
+.offset:before { 
+	display: block; 
+ 	content: " "; 
+  	height: 4rem;      /* Give height of your fixed element */
+    margin-top: -3rem; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
 #content {
-    margin-top: 3em;
+    margin-top: 3rem;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 #home {
-    background-image: url("http://res.cloudinary.com/dmka9ngue/image/upload/c_scale,w_1327/v1520706933/jeremy-bishop-424423-unsplash.jpg");
+    background-image: url("http://res.cloudinary.com/dmka9ngue/image/upload/c_scale,e_grayscale,w_1364/v1520773621/edgar-chaparro-555725-unsplash.jpg");
     text-align: center;
     font-size: 2em;
     color: #364f6b;
+    margin-left: -5%;
+    padding-left: 5%;
+    margin-right: -5%;
+    padding-right: 5%;
+    overflow: hidden;
 }
 
 #about {
-    background-image: url("http://res.cloudinary.com/dmka9ngue/image/upload/v1520706955/samuel-zeller-16570-unsplash.jpg");
+    background-image: url("http://res.cloudinary.com/dmka9ngue/image/upload/c_scale,w_2122/v1520706926/tom-holmes-556800-unsplash.jpg");
     text-align: center;
     font-size: 2em;
     color: #364f6b;
+    margin-left: -5%;
+    padding-left: 5%;
+    margin-right: -5%;
+    padding-right: 5%;
+    overflow: hidden;
+}
+
+#contact {
+    background-image: url("http://res.cloudinary.com/dmka9ngue/image/upload/c_crop,g_south,w_3024,y_2056/v1520773624/philipp-balunovic-557420-unsplash.jpg");
+
 }
 
 #item31 {
@@ -104,6 +136,7 @@ p {
     color: #364f6b;
     text-align: center;
     line-height: 1.2em;
+    border-radius: 0.5em;
 }
 
 #item32 {
@@ -114,6 +147,7 @@ p {
     color: #364f6b;
     text-align: center;
     line-height: 1.2em;
+    border-radius: 0.5em;
 }
 
 #item33 {
@@ -124,6 +158,7 @@ p {
     color: #364f6b;
     text-align: center;
     line-height: 1.2em;
+    border-radius: 0.5em;
 }
 
 #item21 {
@@ -134,6 +169,7 @@ p {
     color: #364f6b;
     text-align: center;
     line-height: 1.2em;
+    border-radius: 0.5em;
 }
 
 #item22 {
@@ -143,7 +179,8 @@ p {
    background-color: #3fc1c9;
    color: #364f6b;
    text-align: center;
-   line-height: 1.2em; 
+   line-height: 1.2em;
+   border-radius: 0.5em; 
 }
 
 #item11 {
@@ -153,7 +190,9 @@ p {
     background-color: #fc5185;
     color: #364f6b;
     text-align: center;
-    line-height: 1.2em; 
+    line-height: 1.2em;
+    border-radius: 0.5em; 
  }
+
 
 
