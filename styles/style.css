@@ -38,7 +38,7 @@ footer {
 }
 
 .post {
-    padding: 19rem 0;
+    padding: 17rem 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,24 +73,55 @@ footer {
     background-color: #364f6b;
     border-radius: 10%;
     margin-bottom: 0.5em;
-}
-
-.butlink a {
     color: #f5f5f5;
     text-decoration: none;
+    display: inline-block;
 }
 
 .butlink:hover {
     background-color: #fc5185;
 }
 
-.offset:before { 
+#about.offset:before { 
 	display: block; 
  	content: " "; 
-  	height: 4rem;      /* Give height of your fixed element */
+  	height: 12rem;      /* Give height of your fixed element */
     margin-top: -3rem; /* Give negative margin of your fixed element */  	
     visibility: hidden; 
 }
+
+.offset:before { 
+	display: block; 
+ 	content: " "; 
+  	height: 6rem;      /* Give height of your fixed element */
+    margin-top: -3rem; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
+.formcontain {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 10% auto 10% auto 10%;
+    grid-template-areas: 
+        ". . . ."
+        ". a a ."
+        ". . . ."
+        ". b b ."
+        ". . . .";
+}
+
+.fcgrida {
+    grid-area: a;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.fcgridb {
+    grid-area: b;
+    columns: 2;
+    background-color: antiquewhite;
+}
+
 
 #content {
     margin-top: 3rem;
@@ -120,6 +151,7 @@ footer {
     padding-left: 5%;
     margin-right: -5%;
     padding-right: 5%;
+    margin-top: 6rem;
     overflow: hidden;
 }
 
@@ -193,6 +225,43 @@ footer {
     line-height: 1.2em;
     border-radius: 0.5em; 
  }
+
+ #noauthor {
+     background-image: url("http://res.cloudinary.com/dmka9ngue/image/upload/c_scale,w_1494/v1520773594/tanja-heffner-553965-unsplash.jpg");
+     color: #364f6b;
+     margin: 0 0 0 0;
+     width: 100%;
+     height: 100%;
+ }
+
+#form1 {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+#form2 {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+#form3 {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+#form4 {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
 
 
 
